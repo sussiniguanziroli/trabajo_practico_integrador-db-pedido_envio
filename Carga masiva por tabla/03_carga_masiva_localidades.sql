@@ -1,4 +1,5 @@
 -- Limpiamos la tabla para empezar de cero
+USE tpi_pedido_envio;
 TRUNCATE TABLE LOCALIDADES;
 
 INSERT INTO LOCALIDADES (provincia, ciudad, codigo_postal) VALUES
