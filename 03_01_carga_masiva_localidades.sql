@@ -1,5 +1,4 @@
--- Limpiamos la tabla para empezar de cero
-TRUNCATE TABLE LOCALIDADES;
+USE tpi_pedido_envio; -- Seleccionamos el esquema
 
 INSERT INTO LOCALIDADES (provincia, ciudad, codigo_postal) VALUES
 ('Ciudad Autónoma de Buenos Aires', 'Buenos Aires', 'C1000'),
