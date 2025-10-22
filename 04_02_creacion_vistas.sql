@@ -24,3 +24,12 @@ SELECT
   p.observaciones
 FROM tpi_pedido_envio.PEDIDO p
 JOIN tpi_pedido_envio.CLIENTE c ON p.id_cliente = c.id_cliente;
+
+
+-- para observar las vistas
+SELECT * FROM vista_pedidos_resumen;
+SELECT * FROM vista_clientes_publicos;
+
+
+
+
