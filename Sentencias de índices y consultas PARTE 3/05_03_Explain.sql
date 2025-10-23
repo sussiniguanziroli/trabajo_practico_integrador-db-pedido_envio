@@ -1,0 +1,13 @@
+-- Usada para explain con/sin indices de consulta 3
+EXPLAIN SELECT
+    p.producto_nombre,
+    SUM(pp.cantidad) AS total_vendido
+FROM
+    PRODUCTO p
+JOIN
+    PEDIDO_PRODUCTO pp ON p.id_producto = pp.id_producto
+GROUP BY
+    p.producto_nombre
+ORDER BY
+    total_vendido DESC
+LIMIT 5;
